@@ -1,10 +1,6 @@
 {
-    "name": "jurrieb/rewind",
+    "name": "Jurrieb/rewind",
     "authors": [
-        {
-            "name": "Jurgen Bosma",
-            "email": "jurrieb@gmail.com"
-        }
     ],
     "require": {}
 }
