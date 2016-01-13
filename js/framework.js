@@ -30,7 +30,7 @@ function dropdown($menu) {
 	} else {
 		css.top = '100%';
 	}
-    
+
 	$('.dropdown-menu').not($menu).hide();
 	$menu.css(css);
 	$menu.toggle();
@@ -41,7 +41,7 @@ function popup($popup) {
 }
 
 $(function() {
-    $(document).on( 'click', 'a,button[data-toggle]', function(e) {
+    $(document).on( 'click', 'a[data-toggle], button[data-toggle]', function(e) {
 
         e.preventDefault();
 

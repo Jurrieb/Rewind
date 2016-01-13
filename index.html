@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="NL">
+<html>
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,59 +12,64 @@
 <body>
 
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h1>Grid system</h1>
         </div>
-        <div class="col-12 col-sd-6 col-md-4 col-bd-2">col</div>
-        <div class="col-12 col-sd-6 col-md-4 col-bd-2">col</div>
-        <div class="col-12 col-sd-6 col-md-4 col-bd-2">col</div>
-        <div class="col-12 col-sd-6 col-md-4 col-bd-2">col</div>
-        <div class="col-12 col-sd-6 col-md-4 col-bd-2">col</div>
-        <div class="col-12 col-sd-6 col-md-4 col-bd-2">col</div>
+        <div class="col s4">col</div>
+        <div class="col s4">col</div>
+        <div class="col s4">col</div>
     </div>
 
     <div class="row">
-        <div class="col-12">
-            <h1>Grid system offset</h1>
+        <div class="col s12">
+            <h1>Grid offset</h1>
         </div>
-        <div class="col-12">
-            <div class="col-6 col-offset-1">
-                <p>Column with offset of 1</p>
-            </div>
+        <div class="row">
+            <div class="col s1 offset-s1">offset 1</div>
         </div>
-        <div class="col-12">
-            <div class="col-6 col-offset-2">
-                <p>Column with offset of 2</p>
-            </div>
+        <div class="row">
+            <div class="col s1 offset-s2">offset 2</div>
         </div>
-        <div class="col-12">
-            <div class="col-6 col-offset-3">
-                <p>Column with offset of 3</p>
-            </div>
-            <div class="col-3">colum 3</div>
+        <div class="row">
+            <div class="col s1 offset-s3">offset 3</div>
         </div>
-        <div class="col-12">
-            <div class="col-6 col-offset-4">
-                <p>Column with offset of 4</p>
-            </div>
+
+        <div class="row">
+            <div class="col s1 offset-s4">offset 4</div>
         </div>
-        <div class="col-12">
-            <div class="col-6 col-offset-5">
-                <p>Column with offset of 5</p>
-            </div>
+
+        <div class="row">
+            <div class="col s1 offset-s5">offset 5</div>
         </div>
-        <div class="col-12">
-            <div class="col-6 col-offset-6">
-                <p>Column with offset of 6</p>
-            </div>
+
+        <div class="row">
+            <div class="col s1 offset-s6">offset 6</div>
+            <div class="col s5">Normal column next to offset</div>
+        </div>
+    </div>
+
+       <div class="row">
+        <div class="col s12">
+            <h1>Responsive grid</h1>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l3">s12 m6 l3</div>
+            <div class="col s12 m6 l9">s12 m6 l9</div>
+        </div>
+        <div class="row">
+            <div class="col s9 m6 offset-s3 offset-m6">s3 offset-s3 m6 offset-m6</div>
+        </div>
+
+        <div class="row">
+            <div class="col s10 m8 l6 offset-s1 offset-m2 offset-l3">s10 offset-s1 m8 offset-m2 l6 offset-l3</div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h1>Headings</h1>
         </div>
-        <div class="col-12 col-sd-6 col-md-6 col-bd-6">
+        <div class="col s12 m6">
             <h1>This is a H1 heading</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <h2>This is a H2 heading</h2>
@@ -80,7 +85,7 @@
             <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>
         </div>
 
-        <div class="col-12 col-sd-6 col-md-6 col-bd-6">
+        <div class="col s6 m6">
             <h1>Heading</h1>
             <h2>Heading</h2>
             <h3>Heading</h3>
@@ -108,46 +113,79 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h2>Buttons</h2>
             <p>In this framework we do not use color we think the designer/developer should use his own color sets.</p>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <h3>Normal buttons</h3>
-                <button type="button" class="button">Submit</button>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            <h3>Normal buttons</h3>
+            <button type="button" class="button">Submit</button>
+            <a href="#" class="button">Do something</a>
+        </div>
+        <div class="col s3">
+            <h3>Active buttons</h3>
+            <button type="button" class="button active">Submit</button>
+            <a href="#" class="button active">Do something</a>
+        </div>
+        <div class="col s3">
+            <h3>Focus buttons</h3>
+            <button type="button" class="button focus">Submit</button>
+            <a href="#" class="button focus">Do something</a>
+        </div>
+        <div class="col s3">
+            <h3>Disabled buttons</h3>
+            <button type="button" class="button disabled">Submit</button>
+            <a href="#" class="button disabled">Do something</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h3>Block and pill buttons</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <button type="button" class="button block">Submit</button>
+            <a href="#" class="button block">Do something</a>
+        </div>
+        <div class="col s6">
+            <button type="button" class="button pill">Submit</button>
+            <a href="#" class="button pill">Do something</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h2>Buttons bar</h2>
+            <p>In this framework we do not use color we think the designer/developer should use his own color sets.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <div class="button-group">
+                <button type="button" class="button active">Submit</button>
+                <a href="#" class="button ">Do something</a>
+                <button type="button" class="button ">Submit</button>
                 <a href="#" class="button">Do something</a>
             </div>
-            <div class="col-3">
-                <h3>Active buttons</h3>
-                <button type="button" class="button active">Submit</button>
-                <a href="#" class="button active">Do something</a>
-            </div>
-            <div class="col-3">
-                <h3>Focus buttons</h3>
-                <button type="button" class="button focus">Submit</button>
-                <a href="#" class="button focus">Do something</a>
-            </div>
-            <div class="col-3">
-                <h3>Disabled buttons</h3>
-                <button type="button" class="button disabled">Submit</button>
-                <a href="#" class="button disabled">Do something</a>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <h3>Block buttons</h3>
-                <button type="button" class="button block">Submit</button>
-                <a href="#" class="button block">Do something</a>
+
+        <div class="col s6">
+            <div class="button-group">
+                <button type="button" class="button pill">Submit</button>
+                <a href="#" class="button pill">Do something</a>
+                <button type="button" class="button pill">Submit</button>
+                <a href="#" class="button pill">Do something</a>
             </div>
         </div>
     </div>
     <hr>
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h1>Tables</h1>
         </div>
-        <div class="col-4">
+        <div class="col s4">
             <h4>Unstyled</h4>
             <table>
                 <thead>
@@ -187,7 +225,7 @@
             </table>
         </div>
 
-        <div class="col-4">
+        <div class="col s4">
             <h4>Styled</h4>
             <table class="table">
                 <thead>
@@ -220,7 +258,7 @@
             </table>
         </div>
 
-        <div class="col-4">
+        <div class="col s4">
             <h4>Striped table</h4>
             <table class="table striped">
                 <thead>
@@ -255,7 +293,7 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h1>Forms</h1>
             <form>
                 <div class="form-block">
@@ -433,21 +471,21 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h1>Code</h1>
             <pre>&lt;p&gt;This is a normal paragraph&lt;/p&gt;</pre>
         </div>
     </div>
     <hr>
     <div class="row">
-        <div class="col-12">
+        <div class="col s12">
             <h1>Popups and dropdowns</h1>
         </div>
 
-        <div class="col-6">
+        <div class="col s6">
             <div class="dropdown">
                 <a href="#" data-toggle="dropdown">Dropdown</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu depth-2">
                     <li><a href="#">menu item</a></li>
                     <li><a href="#">menu item</a></li>
                     <li><a href="#">menu item</a></li>
@@ -455,8 +493,8 @@
             </div>
 
             <div class="dropdown">
-                <button data-toggle="dropdown">Dropdown</button>
-                <ul class="dropdown-menu">
+                <button class="button" data-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu depth-2">
                     <li><a href="#">menu item</a></li>
                     <li><a href="#">menu item</a></li>
                     <li><a href="#">menu item</a></li>
@@ -464,28 +502,63 @@
             </div>
         </div>
 
-        <div class="col-6">
-			<button type="button" data-toggle="popup" data-target="#popup">open a popup</button>
+        <div class="col s6">
+			<button class="button" type="button" data-toggle="popup" data-target="#popup">open a popup</button>
 			<a href="#" data-toggle="popup" data-target="#popup">open a popup</a>
         </div>
 
     </div>
     <hr>
+
+	<div class="row">
+        <div class="col s12">
+            <h1>Depth system</h1>
+        </div>
+	</div>
+	<div class="row">
+        <div class="col s2 offset-s2 depth-1">depth-1</div>
+        <div class="col s2 offset-s1 depth-2">depth-2</div>
+        <div class="col s2 offset-s1 depth-3">depth-3</div>
+    </div>
+	<hr>
+	<div class="row">
+        <div class="col s2 offset-s2 depth-4">depth-4</div>
+        <div class="col s2 offset-s1 depth-5">depth-5</div>
+        <div class="col s2 offset-s1 depth-6">depth-6</div>
+    </div>
+	<hr>
+    <div class="row">
+        <div class="col s12 valign-wrapper" style="height: 200px;">
+            <div class="valign"  style="text-align: center;">
+                <h1>This content should be vertical aligned within this content block</h1>
+            </div>
+        </div>
+    </div>
+	<hr>
+    <div class="row">
+        <div class="col s12">
+            <h2>Shapes</h2>
+        </div>
+        <div class="col s4"><div style="background: #eee; width: 100px; height: 100px;" class="circle"></div></div>
+        <div class="col s4"><div style="background: #eee; width: 100px; height: 100px;" class="rounded"></div></div>
+    </div>
+	<hr>
+
     <div class="popup" id="popup">
-        <div class="popup-window">
+        <div class="popup-window depth-3">
             <div class="popup-header">
                 <button type="button" class="button pull-right" data-toggle="popup" data-target="#popup">x</button>
                 <h2>Hello my name is johannes.</h2>
             </div>
             <div class="popup-body">
                 <div class="row">
-                    <div class="col-6">col6</div>
-                    <div class="col-6">col6</div>
+                    <div class="col s6">col6</div>
+                    <div class="col s6">col6</div>
                 </div>
                 <div class="row">
-                    <div class="col-4">col4</div>
-                    <div class="col-4">col4</div>
-                    <div class="col-4">col4</div>
+                    <div class="col s4">col4</div>
+                    <div class="col s4">col4</div>
+                    <div class="col s4">col4</div>
                 </div>
             </div>
             <div class="popup-footer">
